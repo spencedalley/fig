@@ -1,0 +1,7 @@
+- Create node-skeleton
+- Create swift-skeleton
+- Create r-skeleton
+- Make a case where you are asked if you want to delete directory with project name specified
+- Update README.md
+- Rename bin/app.py to something else
+- Write some tests
