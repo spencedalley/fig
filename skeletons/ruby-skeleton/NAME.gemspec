@@ -5,7 +5,7 @@ $LOAD_PATH.unhsift(lib) unless $LOAD_PATH.include?(lib)
 Gem::Specification.new do |spec|
 	spec.name			= 'NAME'
 	spec.version 		= '1.0.0' 
-	spec.authors 		= ['YOUR_NAME']
+	spec.authors 		= ['AUTHOR']
 	spec.email 			= ['YOUR_EMAIL']
 	spec.summary		= %q{PROJECT_SUMMARY}
 	spec.description 	= %q{PROJECT_DESCRIPTION}
