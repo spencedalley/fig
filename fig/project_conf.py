@@ -47,11 +47,11 @@ def c_project(project_path, project_name):
     os.rename(project_path+'/src/NAME.h', project_path+'/src/%s.h' % project_name)
     os.rename(project_path+'/tests/lib_tests.c', project_path+'/tests/%s_tests.c' % project_name)
 
-    test_contents = open(project_path+'/tests/%s_tests.c').read()
+    test_contents = open(project_path+'/tests/%s_tests.c' % project_name).read()
     test_contents = test_contents.replace('NAME', project_name)
 
-    with open(project_path+'/tests/%s_tests.c', 'w') as f:
-        f.write(tests_contents)
+    with open(project_path+'/tests/%s_tests.c' % project_name, 'w') as f:
+        f.write(test_contents)
 
     src_contents = open(project_path+'/src/%s.h' % project_name).read()
     src_contents = src_contents.replace('NAME', project_name)
