@@ -1,7 +1,7 @@
-try: 
-	from setuptools import setup 
-except ImportError: 
-	from distutils.core import setup 
+try:
+	from setuptools import setup
+except ImportError:
+	from distutils.core import setup
 
 config = {
     'description': 'DESCRIPTION',
@@ -13,7 +13,7 @@ config = {
     'install_requires': ['nose'],
     'packages': ['NAME'],
     'scripts': [],
-    'name': 'PROJECT_NAME'
+    'name': 'NAME'
 }
 
 setup(**config)
