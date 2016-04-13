@@ -43,9 +43,9 @@ def ruby_project(project_path, project_name):
 	return
 
 def c_project(project_path, project_name):
-	os.rename(project_path+'/src/NAME.c', project_path+'/src/%s.c' % project_name)
-    os.rename(project_path+'/src/NAME.h', project_path+'src/%s.h' % project_name)
-    os.rename(project_path+'/tests/lib_tests.c', project_path+'tests/%s_tests.c' % project_name)
+    os.rename(project_path+'/src/NAME.c', project_path+'/src/%s.c' % project_name)
+    os.rename(project_path+'/src/NAME.h', project_path+'/src/%s.h' % project_name)
+    os.rename(project_path+'/tests/lib_tests.c', project_path+'/tests/%s_tests.c' % project_name)
 
     test_contents = open(project_path+'/tests/%s_tests.c').read()
     test_contents = test_contents.replace('NAME', project_name)
@@ -65,4 +65,4 @@ def c_project(project_path, project_name):
     with open(project_path+'/Makefile', 'w') as f:
         f.write(makefile)
 
-    return 
+    return
