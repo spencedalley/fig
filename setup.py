@@ -11,7 +11,7 @@ config = {
     'author_email': 'EMAIL',
     'version': '0.1.0',
     'install_requires': ['nose', 'gitpython',],
-    'packages': ['fig', 'bin'],
+    'packages': ['fig'],
     'scripts': [],
     'name': 'fig'
 }
