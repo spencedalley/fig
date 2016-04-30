@@ -5,7 +5,7 @@ import os
 import shutil
 import sys
 
-# for running the script outside of the package
+# for running the script outside of the package, preventing ImportError's
 PACKAGE_PARENT = '..'
 SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
 sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
@@ -22,7 +22,7 @@ PATHS = PATHS = {
 
 def main():
 	if len(sys.argv) < 3:
-		print('USAGE: app.py <language> <project_name>')
+		print('USAGE:fig <language> <project_name>')
 		sys.exit(0)
 
 	language = sys.argv[1]
